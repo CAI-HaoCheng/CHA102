@@ -17,6 +17,7 @@ public class TestController extends HttpServlet {
 		var xxx = req.getParameter("xxx");//getParameter取得參數
 		req.setAttribute("nickname",xxx);//取得參數後帶入nickname屬性
 		System.out.println();
+		System.out.println();
 		req.getRequestDispatcher("/index.jsp").forward(req, resp);//請求 URL 的路徑資訊，轉跳頁面
 	}
 }
